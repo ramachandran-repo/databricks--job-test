@@ -46,4 +46,4 @@ END;
 
 -- COMMAND ----------
 
-select 'testing query' as test'
+select 'testing query' as test
