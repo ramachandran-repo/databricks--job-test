@@ -25,7 +25,7 @@
 -- 1 demo
 BEGIN
   IF ('${is_job}' = 'False') OR ('${stage}' = '1') THEN
-    SELECT 'stage1' as stage, ${date}' AS run_date, current_timestamp() AS ts;
+    SELECT 'stage1' as stage, '${date}' AS run_date, current_timestamp() AS ts;
   END IF;
 END;
 
@@ -39,7 +39,7 @@ select current_timestamp() as test;
 -- 2 demo
 BEGIN
   IF ('${is_job}' = 'False') OR ('${stage}' = '2') THEN
-    SELECT 'stage2' as stage, ${date}' AS run_date, current_timestamp() AS ts;
+    SELECT 'stage2' as stage, '${date}' AS run_date, current_timestamp() AS ts;
   END IF;
 END;
 
